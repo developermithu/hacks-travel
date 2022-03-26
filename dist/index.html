@@ -9,11 +9,29 @@
       content="tailwindcss, tailwind css, tailwind css boilerplate, tailwind css starter kit"
     />
     <!-- Favicon Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./images/favicon//site.webmanifest" />
-    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="./images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>Hacks Travel</title>
@@ -31,17 +49,21 @@
     <link rel="stylesheet" href="output.css" />
   </head>
 
-  <body class="antialiased bg-white text-black font-josefin">
+  <body class="antialiased overflow-x-hidden bg-white text-black font-josefin">
     <!-- Header -->
     <header class="py-2">
       <nav class="container flex items-center justify-between">
         <ul class="logo">
-          <a href="/">
-            <img src="./images/logo-header.png" alt="" class="w-full" />
-          </a>
+          <li>
+            <a href="/">
+              <img src="./images/logo-header.png" alt="" class="w-full" />
+            </a>
+          </li>
         </ul>
 
-        <ul class="flex items-center gap-x-3 font-medium text-lg">
+        <ul
+          class="hidden lg:flex lg:items-center lg:gap-x-3 font-medium text-lg"
+        >
           <li>
             <a
               href="#"
@@ -62,8 +84,8 @@
               class="text-primary px-2.5 py-1.5 rounded hover:bg-blue-100 flex items-center gap-x-1"
             >
               <span>Plans</span>
-              <span
-                ><svg
+              <span>
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
                   viewBox="0 0 20 20"
@@ -73,8 +95,9 @@
                     fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"
-                  /></svg
-              ></span>
+                  />
+                </svg>
+              </span>
             </a>
           </li>
           <li>
@@ -104,31 +127,141 @@
 
     <!-- Main -->
     <main>
+      <!-- Hero Section -->
       <section
-        style="background-image: url('./images/hero-bg.png'); height: 80vh"
-        class="bg-cover bg-no-repeat"
+        style="background-image: url('./images/hero-bg.png')"
+        class="bg-center md:bg-cover bg-no-repeat h-[100vh] md:h-[80vh]"
       >
         <div class="container py-10">
           <div class="w-[600px] float-left py-16">
-            <h1 class="font-bold text-6xl text-yellow-400">
+            <h1 class="font-bold text-4xl md:text-6xl text-yellow-400">
               Never Pay Full Price <br />
               <span class="text-white">for Flights</span>
             </h1>
-            <p class="text-white text-[1.375rem] py-3">
+            <p class="text-white md:text-[1.375rem] py-3">
               We Tell You What Airline CEO’s Won’t!
             </p>
-            <form action="" method="post" class="flex justify-start gap-x-3">
+            <form action="#" method="post" class="flex justify-start gap-x-3">
               <input
                 type="text"
                 placeholder="Enter your email"
-                class="w-64 px-4 py-2 rounded-3xl"
+                class="w-48 md:w-64 px-4 py-2 rounded-3xl"
               />
               <a
                 href="#"
-                class="px-4 py-2 bg-primary rounded-3xl text-white border font-semibold text-lg"
+                class="px-4 py-2 bg-primary rounded-3xl text-white border-2 font-semibold text-base md:text-lg"
                 >Subscribe Now</a
               >
             </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand Section -->
+      <section
+        style="background-image: url('./images/hero-curve.png')"
+        class="-mt-48 md:-mt-60 bg-center bg-no-repeat md:bg-cover"
+      >
+        <div class="container md:py-64">
+          <div
+            class="flex flex-wrap flex-col gap-y-6 md:flex-row items-center justify-around"
+          >
+            <img src="./images/brands/brand1.png" alt="" class="w-36 md:w-52" />
+            <img src="./images/brands/brand2.png" alt="" class="w-36 md:w-52" />
+            <img src="./images/brands/brand3.png" alt="" class="w-36 md:w-52" />
+            <img src="./images/brands/brand4.png" alt="" class="w-36 md:w-52" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section>
+        <div class="container py-10">
+          <div class="text-center text-3xl md:text-5xl">
+            <h1>
+              Here’s How <br class="mb-4" />
+              <span class="font-bold text-secondary">Hacks.Travel’s</span>
+              Flights Work
+            </h1>
+          </div>
+          <!-- Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-20 pt-20">
+            <div class="flex flex-col gap-y-5">
+              <div><img src="./images/icons/tag.png" alt="" /></div>
+              <div class="text-2xl md:text-4xl font-semibold">
+                Airlines make mistakes
+              </div>
+              <div class="text-base md:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-5">
+              <div>
+                <img src="./images/icons/akar-icons_search.png" alt="" />
+              </div>
+              <div class="text-2xl md:text-4xl font-semibold">
+                All day long, I hunt for the best deals and forward them to you
+              </div>
+              <div class="text-base md:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-5">
+              <div><img src="./images/icons/email.png" alt="" /></div>
+              <div class="text-2xl md:text-4xl font-semibold">
+                Send me an email if you have a specific destination in mind
+              </div>
+              <div class="text-base md:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-5">
+              <div><img src="./images/icons/luggage.png" alt="" /></div>
+              <div class="text-2xl md:text-4xl font-semibold">
+                Enjoy your travels to the fullest at up to 90% off
+              </div>
+              <div class="text-base md:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ticket Section -->
+      <section>
+        <div class="container py-20">
+          <div class="flex flex-wrap justify-between items-center gap-x-16">
+            <div class=" flex-1">
+              <h2 class="text-4xl capitalize">
+                <span class="text-secondary font-bold"
+                  >Interested in winning free roundtrip tickets</span
+                >
+                to popular destinations all over the world?
+              </h2>
+              <p class="pt-5">
+                For my subscribers, I regularly host contests and giveaways. Who
+                knows, maybe you'll be the next winner?
+              </p>
+              <div class="flex items-center justify-between">
+                <div><button class="px-5 py-2 bg-primary text-white border-none rounded-3xl">Sign Me Up For Cheaper Flight Deals</button></div>
+                <div>+</div>
+                <div><img src="./images/ticket.png" alt=""></div>
+              </div>
+            </div>
+            <div>
+              <img src="./images/covers/cover1.png" alt="" class="w-[80%]">
+            </div>
           </div>
         </div>
       </section>
