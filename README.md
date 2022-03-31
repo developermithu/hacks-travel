@@ -1,6 +1,6 @@
 # Hacks Travel
 
-<!-- ![template](/dist/img/template.jpeg) -->
+![template](/dist/images/template.png)
 
 How To Use
 ```
